@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.bootcss.com/semantic-ui/2.3.1/semantic.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<div class="ui container" id="box">
+    <h4 class="ui horizontal divider header"><i class="edit icon"></i> Notes App-Vue.js </h4>
+
+    <button class="ui inverted secondary basic button" @click="add">添加笔记</button>
+    <note v-for="(note,index) in notes" :todo="note" :key="index"></note>
+</div>
+
+
+<script src="https://cdn.bootcss.com/vue/2.5.16/vue.js"></script>
+<script src="https://cdn.bootcss.com/lodash.js/4.17.10/lodash.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.22.1/moment.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.22.1/locale/zh-cn.js"></script>
+<script src="https://cdn.bootcss.com/autosize.js/4.0.2/autosize.min.js"></script>
+
+<script src="js/script.js"></script>
+</body>
+</html>

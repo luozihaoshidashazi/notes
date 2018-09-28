@@ -1,0 +1,24 @@
+.ui.header:first-child{
+    margin-top: 30px;
+}
+/*笔记列表*/
+.ui.card, .ui.cards>.card{
+    width: 100%;
+}
+.ui.basic.inverted.button{
+    margin-bottom: 10px;
+}
+textarea{
+    width: 100%;
+    border: none;
+    margin-bottom: 15px;
+}
+#pic{
+    float: right;
+}
+i.icon.trash.alternate.outline:before {
+    cursor: pointer;
+}
+.ui.card>.content p:last-child{
+    float: right;
+}
